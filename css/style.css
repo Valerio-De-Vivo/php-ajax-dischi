@@ -26,16 +26,37 @@ header h1 {
 
 main {
   width: 80%;
+  padding: 50px 0;
   margin: auto;
-  height: calc(100vh - 100px);
+  min-height: calc(100vh - 100px);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 main .vinil {
-  margin-top: 30px;
+  margin: 30px;
   width: 20%;
+  text-align: center;
 }
 main .vinil img {
+  width: 100%;
   height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .vinil h2 {
+  color: #a9df2b;
+  margin-top: 20px;
+}
+main .vinil h3, main .vinil p {
+  color: white;
+}
+main .vinil h3 {
+  border-bottom: 2px dashed #a9df2b;
+  padding: 10px 0;
+}
+main .vinil p {
+  display: inline-block;
+  padding-top: 10px;
+  color: hotpink;
 }
