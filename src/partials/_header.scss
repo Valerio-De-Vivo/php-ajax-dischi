@@ -1,0 +1,14 @@
+header {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+        color: $secondarycol;
+        font-size: 4em;
+        text-shadow: 2px 2px 5px black;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+    }
+}
