@@ -10,7 +10,8 @@
 var app = new Vue({
   el: '#app',
   data: {
-    vinili: []
+    vinili: [],
+    artist: 'all'
   },
   mounted: function mounted() {
     var _this = this;

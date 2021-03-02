@@ -57,4 +57,5 @@ $vinili = [
         'etichetta'=>'Subliminal',
         'anno'=>'2005',
     ]
+    
 ];

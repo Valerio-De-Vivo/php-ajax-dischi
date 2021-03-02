@@ -23,7 +23,14 @@
 
     <main id="app">
 
-        <div v-for="vinil in vinili" class="vinil">
+        <div style="width: 100%; text-align: center;" class="filter">
+            <p style="color: #a9df2b;">Filtra per Artista</p>
+            <select v-model="artist" name="" id="filter">
+                <option v-for="vinil in vinili" :value="vinil.produttore"> {{vinil.produttore}} </option>
+            </select>
+        </div>
+
+        <div v-if="artist == vinil.produttore || artist == 'all' " v-for="vinil in vinili" class="vinil">
 
             <img :src=" 'css/img/' + vinil.copertina" alt="">
             <h2> {{vinil.titolo}} </h2>
