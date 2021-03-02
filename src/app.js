@@ -6,7 +6,7 @@ var app = new Vue({
     },
     mounted() {
         axios
-            .get('../server.php')
+            .get('server.php')
             .then((res) => {
                 this.vinili = res.data;
             })
