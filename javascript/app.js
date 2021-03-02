@@ -16,7 +16,7 @@ var app = new Vue({
   mounted: function mounted() {
     var _this = this;
 
-    axios.get('http://localhost:8888/php-ajax-dischi/server.php').then(function (res) {
+    axios.get('server.php').then(function (res) {
       _this.vinili = res.data;
     });
   }
