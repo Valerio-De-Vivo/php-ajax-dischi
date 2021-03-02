@@ -7,7 +7,19 @@
   \********************/
 /***/ (() => {
 
-alert();
+var app = new Vue({
+  el: '#app',
+  data: {
+    vinili: []
+  },
+  mounted: function mounted() {
+    var _this = this;
+
+    axios.get('http://localhost:8888/php-ajax-dischi/server.php').then(function (res) {
+      _this.vinili = res.data;
+    });
+  }
+});
 
 /***/ }),
 
@@ -80,7 +92,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// Promise = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"/js/app": 0
+/******/ 			"/javascript/app": 0
 /******/ 		};
 /******/ 		
 /******/ 		var deferredModules = [
